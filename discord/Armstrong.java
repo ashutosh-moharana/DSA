@@ -10,7 +10,7 @@ public class Armstrong{
     public static boolean isArmstrong(int n){
         int sum=0;
         int no=n;
-        int count = Integer.toString(no).length();
+        int count = String.valueOf(no).length();
         while(no>0){
             int dg = no%10;
             sum += Math.pow(dg,count);
